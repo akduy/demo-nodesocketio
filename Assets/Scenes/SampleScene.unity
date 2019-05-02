@@ -213,6 +213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 886647641}
   - component: {fileID: 886647642}
+  - component: {fileID: 886647643}
   m_Layer: 0
   m_Name: '[ GameController ]'
   m_TagString: Untagged
@@ -246,6 +247,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e668112652a9140b3ad82234d6f375, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &886647643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886647640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a0744132e0d19f4ab534fd6cea10e7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  url: ws://127.0.0.1:8000/socket.io/?EIO=4&transport=websocket
+  autoConnect: 1
+  reconnectDelay: 5
+  ackExpirationTime: 1800
+  pingInterval: 25
+  pingTimeout: 60
 --- !u!1 &1925724942
 GameObject:
   m_ObjectHideFlags: 0
